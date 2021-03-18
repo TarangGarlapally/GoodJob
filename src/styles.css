@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/* for Scroller-notrack */
+.myscroller-notrack::-webkit-scrollbar {
+  width: 0.6em;
+  height: 0.4em;
+}
+
+.myscroller-notrack::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+}
+
+.myscroller-notrack::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+/* end for scroller part  */
+
+body {
+  background-color: white;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.nocopy {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Theme Toggle Switch Part */
+.switch {
+  float: right;
+  position: relative;
+  display: inline-block;
+  margin-top: 0.2%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 54px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  border-radius: 28px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 2px;
+  bottom: 2px;
+  border-radius: 50%;
+  background-color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #404040;
+}
+input:checked + .slider:before {
+  background-color: white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+.theme-emoji {
+  margin-top: -5px;
+  margin-right: 2px;
+  font-size: 28px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* Theme Toggle Switch Part End*/
+
+/*Job Tile Part*/
+
+.job-tile {
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  margin: 20px;
+  padding: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.job-tile:hover {
+  transform: scale(1.02);
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+.job-tile h4 {
+  color: grey;
+}
+.job-tile-left {
+  float: left;
+}
+
+.job-tile-right {
+  float: right;
+}
