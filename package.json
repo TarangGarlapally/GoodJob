@@ -1,7 +1,7 @@
 {
   "name": "goodjob",
   "version": "0.1.0",
-  "homepage": "http://taranggarlapally.github.io/goodjob",
+  "homepage": ".",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
