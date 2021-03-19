@@ -1,0 +1,7 @@
+{
+  "short_name": "GoodJob",
+  "name": "Job Board",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff"
+}
