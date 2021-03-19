@@ -1,24 +1,25 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import {styles} from "../styles.js";
 import ToggleSwitch from "../components/ToggleSwitch";
 import { useHistory } from "react-router";
+import { ThemeContext } from "../App";
 
 export default function Header(){
 
-    const [dark_theme,setDarkTheme] = useState(false);
     const history = useHistory();
+    const {theme,setTheme} = useContext(ThemeContext);
     const light = styles.lightTheme;
     
     const toggleSwitch = ()=>{
-      setDarkTheme(!dark_theme);
+      setTheme(!theme);
     }
-    document.body.style.backgroundColor = dark_theme?"#18181A":"white";
-    document.body.style.color = dark_theme?"#D3D4CD":"black";
+    document.body.style.backgroundColor = theme?"#18181A":"white";
+    document.body.style.color = theme?"#D3D4CD":"black";
 
     return <div style={light.header}>
             <h1 className="nocopy" style={light.title} onClick={()=> history.push({
               pathname: "/"
             })}>GoodJob</h1>
-            <ToggleSwitch toggleSwitch={toggleSwitch} dark_theme={dark_theme}/>
+            <ToggleSwitch toggleSwitch={toggleSwitch} dark_theme={theme}/>
         </div>
 }

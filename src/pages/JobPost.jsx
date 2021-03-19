@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router";
 import Header from "../components/Header.jsx";
 
 export default function  JobPost(props){
     const job = props.location.state.job;
     const history = useHistory();
+
+    useEffect(()=>{
+        document.getElementById("arrow-back").style.color = "black";
+    });
     return <div>
-        <Header />
-        <div className="arrow-back" onClick={()=>history.goBack()}>
+        <div id = "arrow-back" className="arrow-back" onClick={()=>history.goBack()}>
             <i className='fas fa-arrow-left'></i>
         </div>
         <div className="container-outer">
