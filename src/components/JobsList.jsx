@@ -25,8 +25,17 @@ export default function JobsList(){
 
 
 
-    return <div className = "jobs-list">
-    {jobs.map((job)=> <JobTile job = {job} key={job.id}/>)}
-    {jobs.length === 0?<p style={{align:"center",marginTop:"20%"}}>Getting Jobs...</p>:null}
-  </div>
+    return <div>
+        <div className = "jobs-list">
+            {jobs.map((job)=> <JobTile job = {job} key={job.id}/>)}
+        </div>
+        {jobs.length === 0?
+        <div className='loader-out'>
+            <div className="loading">
+                <div class="loading-circle"></div>
+            </div>
+            <p>Getting available jobs...</p>
+            </div>
+        :null}
+    </div>
 }

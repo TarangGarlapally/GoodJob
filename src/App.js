@@ -5,14 +5,16 @@ import Home from "./pages/Home";
 import JobPost from "./pages/JobPost";
 
 function App(){
-return <Router>
-  <Switch>
-      <Route exact path="/" component={Home}
-      />
-      <Route exact path="/jobpost" component={JobPost}
-      />
-  </Switch>
-</Router>
+return <div>
+      <Router>
+        <Switch>
+            <Route exact path="/" component={Home}
+            />
+            <Route exact path="/jobpost" component={JobPost}
+            />
+        </Switch>
+      </Router>
+      </div>
 }
 
 

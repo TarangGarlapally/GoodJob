@@ -36,6 +36,185 @@ body {
   user-select: none;
 }
 
+.button {
+  padding: 5px;
+  background-color: cornflowerblue;
+  transition: 0.4s ease;
+  border-radius: 5px;
+  display: inline;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.button {
+  padding: 5px;
+  background-color: cornflowerblue;
+  transition: 0.4 ease;
+}
+
+.loading {
+  display: block;
+  margin-left: 37.5%;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+  height: 280px;
+  text-align: center;
+}
+
+.loading-circle {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  animation: my-animation 3s infinite;
+}
+
+.loader-out {
+  text-align: center;
+}
+
+@keyframes my-animation {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 200px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 0px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* Job post page */
+
+.arrow-back {
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #d3d4cd;
+  position: fixed;
+  border-radius: 50%;
+  z-index: 500;
+  display: inline;
+  transition: 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+.arrow-back:hover {
+  background-color: white;
+}
+
+.arrow-back i {
+  position: relative;
+  top: 16%;
+}
+
+.container-outer {
+  margin: 10%;
+  margin-top: 10px;
+  margin-bottom: 5%;
+  padding: 2%;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+.container-outer hr {
+  width: 80%;
+  margin-left: 10%;
+  align-content: center;
+  background-color: grey;
+  height: 2px;
+  border-radius: 50%;
+}
+
+.container-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-div {
+  flex: 30%;
+  padding: 10px;
+}
+
+.title-div {
+  flex: 60%;
+  padding: 10px;
+}
+
+.container-header img {
+  margin-top: 0;
+  width: 40%;
+  height: auto;
+}
+
+.title-div h2 {
+  color: grey;
+  margin-bottom: 5px;
+}
+.title-div a {
+  text-decoration: none;
+}
+.title-div .location {
+  float: left;
+}
+.title-div .timestamp {
+  color: grey;
+  float: right;
+}
+
+.container-desc {
+  margin: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-desc-left {
+  text-align: left;
+  flex: 50%;
+}
+
+.container-desc-right {
+  text-align: right;
+  flex: 50%;
+}
+
+.description {
+  margin-top: 4%;
+}
+
+.apply {
+  margin-top: 5%;
+}
+
+/* Job post page end */
+
 /* Theme Toggle Switch Part */
 .switch {
   float: right;
@@ -117,7 +296,6 @@ input:checked + .slider:before {
 
 .job-tile:hover {
   transform: scale(1.02);
-  box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
 
 .job-tile h4 {
@@ -186,8 +364,32 @@ img {
 
   .company-logo {
     width: 75px;
+    height: 75px;
   }
   .jobs-list {
     padding: 0px;
+  }
+
+  .title-div,
+  .logo-div {
+    flex: 100%;
+  }
+
+  .container-outer {
+    margin: 0%;
+    margin-top: 10px;
+    margin-bottom: 5%;
+    padding: 5%;
+    box-shadow: 0 0px 0px rgb(255, 255, 255);
+  }
+
+  .title-div h1 {
+    font-size: 20px;
+  }
+  .title-div h2 {
+    font-size: 16px;
+  }
+  .loading {
+    margin-left: auto;
   }
 }

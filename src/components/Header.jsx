@@ -13,6 +13,7 @@ export default function Header(){
       setDarkTheme(!dark_theme);
     }
     document.body.style.backgroundColor = dark_theme?"#18181A":"white";
+    document.body.style.color = dark_theme?"#D3D4CD":"black";
 
     return <div style={light.header}>
             <h1 className="nocopy" style={light.title} onClick={()=> history.push({

@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import {styles} from "../styles.js";
-import ToggleSwitch from "../components/ToggleSwitch";
+import React from "react";
 import JobsList from "../components/JobsList.jsx";
 import Header from "../components/Header.jsx";
 
