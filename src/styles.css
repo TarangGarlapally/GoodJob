@@ -6,8 +6,7 @@
 
 /* for Scroller-notrack */
 .myscroller-notrack::-webkit-scrollbar {
-  width: 0.6em;
-  height: 0.4em;
+  width: 0.5em;
 }
 
 .myscroller-notrack::-webkit-scrollbar-track {
@@ -98,8 +97,6 @@ input:checked + .slider:before {
   margin-top: -5px;
   margin-right: 2px;
   font-size: 28px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 /* Theme Toggle Switch Part End*/
@@ -111,6 +108,8 @@ input:checked + .slider:before {
   box-shadow: 0 1px 5px rgb(138, 137, 137);
   margin: 20px;
   padding: 20px;
+  display: flex;
+  height: auto;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
@@ -123,11 +122,72 @@ input:checked + .slider:before {
 
 .job-tile h4 {
   color: grey;
-}
-.job-tile-left {
-  float: left;
+  margin: 4px;
 }
 
-.job-tile-right {
-  float: right;
+.job-tile h2,
+.job-tile p {
+  margin: 2px;
+}
+
+.job-tile-left {
+  display: flex;
+}
+
+.job-tile-type {
+  padding: 5px;
+  background-color: grey;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  display: inline-block;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  margin-top: 10%;
+  margin-left: 0px;
+  padding-right: 8px;
+}
+
+.jobs-list {
+  position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .job-tile h2 {
+    font-size: 16px;
+  }
+
+  .job-tile h4 {
+    font-size: 10px;
+  }
+
+  .job-tile p {
+    font-size: 8px;
+  }
+
+  .job-tile-type {
+    font-size: 8px;
+    padding: 2px;
+  }
+
+  .job-tile-text {
+    float: right;
+  }
+
+  img {
+    width: 50px;
+    height: auto;
+  }
+
+  .company-logo {
+    width: 75px;
+  }
+  .jobs-list {
+    padding: 0px;
+  }
 }
