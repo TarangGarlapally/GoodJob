@@ -11,7 +11,7 @@ export default function  JobPost(props){
     });
     return <div>
         <div id = "arrow-back" className="arrow-back" onClick={()=>history.goBack()}>
-            <i className='fas fa-arrow-left'></i>
+            <i className='fa fa-arrow-left'></i>
         </div>
         <div className="container-outer">
             <div className="container-header">
