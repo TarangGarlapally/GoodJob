@@ -21,7 +21,7 @@ function InputField(props){
   }
   const handleClear = ()=>{
     setFilter({...filter,term: "" , location: ""});
-    handleSubmit();
+    props.createString({term:"",location:""});
   }
 
 
