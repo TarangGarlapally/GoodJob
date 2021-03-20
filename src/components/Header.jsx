@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import {styles} from "../styles.js";
 import ToggleSwitch from "../components/ToggleSwitch";
 import { useHistory } from "react-router";

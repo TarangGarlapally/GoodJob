@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router";
-import Header from "../components/Header.jsx";
 
 export default function  JobPost(props){
     const job = props.location.state.job;

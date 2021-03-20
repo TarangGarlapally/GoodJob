@@ -109,6 +109,46 @@ body {
   }
 }
 
+/* Search bar */
+
+.filter-bar {
+  padding: 2%;
+  display: inline-block;
+  width: 98%;
+}
+
+.filter-bar input {
+  width: 25%;
+  padding-left: 2px;
+  height: 36px;
+  border: 1px solid rgb(175, 175, 175);
+  transition: 0.2s ease;
+}
+
+.filter-bar input:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(175, 175, 175);
+}
+.filter-bar button {
+  width: 23%;
+  height: 42px;
+  border: none;
+  transition: 0.2s ease;
+  border-radius: unset;
+}
+
+.filter-bar .clr {
+  background-color: white;
+  color: grey;
+  border: 1px solid grey;
+}
+
+.filter-bar .clr:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+/* Search bar end */
+
 /* Job post page */
 
 .arrow-back {
